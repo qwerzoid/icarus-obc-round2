@@ -1,0 +1,41 @@
+# Build outputs
+*.o
+*.a
+!lib/libobc_physics.a
+obc_sim
+build/
+
+# Runtime logs and reports
+*.log
+*.out
+*.err
+results.json
+crash_report.json
+ground_station.log
+core
+core.*
+
+# Editor and OS noise
+.DS_Store
+.idea/
+.vscode/
+*~
+*.swp
+*.swo
+# Internal notes — should never exist in this repo, but as a backstop
+TODO.md
+CONSTANTS.md
+
+# Local verification builds / scratch copies used during testing
+*_verification/
+*_wrapped/
+verify_build/
+temp_*/
+
+# Python
+__pycache__/
+*.pyc
+
+# Compiled/generated headers if you ever auto-generate any
+*.gch
+*.tex
