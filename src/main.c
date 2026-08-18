@@ -49,6 +49,8 @@ int main(void) {
     state.target_heater_pwm = 0.0;
     state.target_wheel_rpm = 0.0;
 
+    cmd_set_actuators(100.0, 5000.0);
+
     for (state.tick = 1; state.tick <= TOTAL_TICKS; ++state.tick) {
         state.orbit_index = ((state.tick - 1U) / TICKS_PER_ORBIT) + 1U;
         scheduler_run_tick(&state);
