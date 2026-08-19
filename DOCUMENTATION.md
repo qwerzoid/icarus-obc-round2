@@ -2,7 +2,7 @@ Icarus OBC Round 2 - Documentation
 
 1.Overview
 
-I approached the exercise by first reproducing the flight software system onto my system locally, by following the steps which were given.Then I inspected the source code and looked at the runtime errors in the logs. Debugging played a major part in this problem statement. I used GDB for the same and debugged the code in the CLI. After every fix, I rebuilt and reran the complete 2250 tick simualtion.
+I approached the exercise by first reproducing the flight software system onto my system locally, by following the steps which were given.Then I inspected the source code and looked at the runtime errors in the logs. Debugging played a major part in this problem statement. I used GDB for the same and debugged the code in the CLI. After every fix, I rebuilt and reran the complete 2250 tick simulation.
 
 The final solution branch completes all 2250 ticks without any major runtime warnings, memory corruption or segmentation fault. There were a few other warnings which were already present in the existing codebase like:
 _FORTIFY_SOURCE redefined
